@@ -7,9 +7,9 @@
 
 *Constructor*
 
-Promise类似于 `XMLHttpRequest`，从构造函数 `Promise` 来创建一个新建新`promise`对象作为接口。
+Promise类似于 `XMLHttpRequest`，从构造函数 `Promise` 来创建一个新的 `promise` 对象作为接口。
 
-要想创建一个promise对象、可以使用`new`来调用`Promise`的构造器来进行实例化。
+要想创建一个promise对象，可以使用 `new` 来调用 `Promise` 构造器来进行实例化。
 
 [source,javascript]
 ----
@@ -21,8 +21,8 @@ var promise = new Promise(function(resolve, reject) {
 
 *Instance Method*
 
-对通过new生成的promise对象为了设置其值在 *resolve*(成功) / *reject*(失败)时调用的回调函数
-可以使用`promise.then()` 实例方法。
+对通过 `new` 生成的 promise 对象，为了设置其值在 *resolve*(成功) / *reject*(失败) 时调用的回调函数，
+可以使用 `promise.then()` 实例方法。
 
 [source,javascript]
 ----
@@ -37,7 +37,7 @@ reject(失败)时::
 `onFulfilled`、`onRejected` 两个都为可选参数。
 
 `promise.then` 成功和失败时都可以使用。
-另外在只想对异常进行处理时可以采用 `promise.then(undefined, onRejected)` 这种方式，只指定reject时的回调函数即可。
+另外，在只想对异常进行处理时可以采用 `promise.then(undefined, onRejected)` 这种方式，仅指定 reject 时的回调函数。
 不过这种情况下 `promise.catch(onRejected)` 应该是个更好的选择。
 
 [source,javascript]
@@ -46,9 +46,7 @@ promise.catch(onRejected)
 
 *Static Method*
 
-像 `Promise` 这样的全局对象还拥有一些静态方法。
-
-包括 `Promise.all()` 还有 `Promise.resolve()` 等在内，主要都是一些对Promise进行操作的辅助方法。
+像 `Promise` 这样的全局对象还拥有一些静态方法，包括 `Promise.all()` 还有 `Promise.resolve()` 等在内，主要都是一些对Promise进行操作的辅助方法。
 
 
 === Promise workflow
