@@ -4,7 +4,7 @@
 首先让我们来了解一下到底什么是Promise。
 
 Promise是抽象异步处理对象以及对其进行各种操作的组件。
-其详细内容在接下来我们还会进行介绍，Promise并不是从JavaScript中发祥的概念。
+其详细内容在接下来我们还会进行介绍，Promise并不是从JavaScript中发明的概念。
 
 Promise最初被提出是在 http://erights.org/elib/distrib/pipeline.html[E语言]中，
 它是基于并列/并行处理设计的一种编程语言。
