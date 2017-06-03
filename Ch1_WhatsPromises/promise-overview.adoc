@@ -62,21 +62,21 @@ promise.catch(onRejected)
 ----
 include::embed/embed-promise-workflow.js[]
 ----
-<1>  `new` Promise构造器之后，会返回一个promise对象
-<2> <1>为promise对象用设置 `.then` 调用返回值时的回调函数。
+<1> `new` Promise 构造器之后，会返回一个 promise 对象
+<2> 调用 promise 对象的 `.then` 方法来注册操作完成时的回调函数。
 
-`asyncFunction` 这个函数会返回promise对象，
-对于这个promise对象，我们调用它的 `then` 方法来设置resolve后的回调函数，
-`catch` 方法来设置发生错误时的回调函数。
+`asyncFunction` 这个函数会返回 promise 对象，
+对于这个 promise 对象，我们调用它的 `then` 方法来注册 resolve 后的回调函数，
+`catch` 方法来注册发生错误时的回调函数。
 
-该promise对象会在setTimeout之后的16ms时被resolve,
+该 promise 对象会在 `setTimeout` 之后的 16ms 时被 resolve,
 这时 `then` 的回调函数会被调用，并输出 `'Async Hello world'` 。
 
-在这种情况下 `catch` 的回调函数并不会被执行（因为promise返回了resolve），
+在这种情况下 `catch` 的回调函数并不会被执行（因为 promise 返回了 resolve），
 不过如果运行环境没有提供 `setTimeout` 函数的话，那么上面代码在执行中就会产生异常，在 `catch` 中设置的回调函数就会被执行。
 
-当然，像`promise.then(onFulfilled, onRejected)` 的方法声明一样，
-如果不使用`catch` 方法只使用 `then`方法的话，如下所示的代码也能完成相同的工作。
+当然，像 `promise.then(onFulfilled, onRejected)` 的方法声明一样，
+若不使用 `catch` 而仅使用 `then` 方法的话，也能完成相同的工作，代码如下所示的：
 
 [source,javascript]
 ----
