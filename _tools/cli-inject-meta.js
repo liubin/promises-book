@@ -2,7 +2,7 @@
 // </head> にmetaタグを追加する
 function convertNoRobots(html) {
     return html.replace('</head>', '<meta name="robots" content="noindex, nofollow" />\n'
-            + '<link rel="canonical" href="http://azu.github.io/promises-book/" />\n'
+            + '<link rel="canonical" href="http://liubin.github.io/promises-book/" />\n'
             + '</head>'
     );
 }

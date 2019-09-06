@@ -2,7 +2,7 @@
 
 var relToAbs = require("rel-to-abs");
 function convertRelToAbs(content) {
-    return relToAbs.convert(content, "http://azu.github.io/promises-book")
+    return relToAbs.convert(content, "http://liubin.github.io/promises-book")
 }
 
 var data = "";

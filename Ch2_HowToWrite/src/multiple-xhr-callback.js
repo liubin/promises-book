@@ -30,10 +30,10 @@ function jsonParse(callback, error, value) {
 // <2> 发送XHR请求
 var request = {
     comment: function getComment(callback) {
-        return getURLCallback('http://azu.github.io/promises-book/json/comment.json', jsonParse.bind(null, callback));
+        return getURLCallback('http://liubin.github.io/promises-book/json/comment.json', jsonParse.bind(null, callback));
     },
     people: function getPeople(callback) {
-        return getURLCallback('http://azu.github.io/promises-book/json/people.json', jsonParse.bind(null, callback));
+        return getURLCallback('http://liubin.github.io/promises-book/json/people.json', jsonParse.bind(null, callback));
     }
 };
 // <3> 启动多个XHR请求，当所有请求返回时调用callback

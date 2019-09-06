@@ -17,10 +17,10 @@ function getURL(URL) {
 }
 var request = {
         comment: function getComment() {
-            return getURL('http://azu.github.io/promises-book/json/comment.json').then(JSON.parse);
+            return getURL('http://liubin.github.io/promises-book/json/comment.json').then(JSON.parse);
         },
         people: function getPeople() {
-            return getURL('http://azu.github.io/promises-book/json/people.json').then(JSON.parse);
+            return getURL('http://liubin.github.io/promises-book/json/people.json').then(JSON.parse);
         }
     };
 function main() {
