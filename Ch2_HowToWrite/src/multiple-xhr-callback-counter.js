@@ -29,10 +29,10 @@ function parse(callback, error, value) {
 }
 var request = {
     comment: function getComment(callback) {
-        return getURLCallback('http://azu.github.io/promises-book/json/comment.json', parse.bind(null, callback));
+        return getURLCallback('http://liubin.github.io/promises-book/json/comment.json', parse.bind(null, callback));
     },
     people: function getPeople(callback) {
-        return getURLCallback('http://azu.github.io/promises-book/json/people.json', parse.bind(null, callback));
+        return getURLCallback('http://liubin.github.io/promises-book/json/people.json', parse.bind(null, callback));
     }
 };
 function main(callback) {
